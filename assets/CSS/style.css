@@ -1,0 +1,313 @@
+
+/* comman css */
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#mainheading{
+    text-align: center;
+    margin: 33px;
+    padding: 22px;
+}
+#secondheading{
+    color: white;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 93%;
+    padding: 1% 32px;
+    margin-bottom: 19px;
+    border-radius: 8px 8px 0 0;
+}
+.Heading1{
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 12px;
+    width: 100%;
+    text-align: center;
+    /* margin: 0; */
+}
+h2 {
+    padding-top: 6px;
+    text-align: left;
+    padding-left: 8px;
+}
+
+h3 {
+    width: 100%;
+    padding: 2px 0;
+    padding-left: 16px;
+}
+
+#conc{
+    display: flex;
+    justify-content: center;
+
+}
+#conc textarea{
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+select{
+    border-radius: 4px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.fa-floppy-disk{
+    font-size: 25px;
+    display: flex;
+    justify-content: right;
+    
+}
+
+img {
+    width: -webkit-fill-available;
+    border-radius: 24px;
+}
+
+button{
+    color: white;
+    background-color: blue;
+    width: fit-content;
+    padding:5px;
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+/* navbar  */
+
+
+
+#nav {
+    position: fixed;
+    border: 2px solid black;
+    border-radius: 10px;
+    left: -17%;
+    transition: 0.5s;
+    z-index: 999;
+    width: 20vw;
+    background: #f0e9e9;
+}
+#nav ul{
+    padding: 14px;
+
+}
+#nav ul li {
+    border-top: 1px solid rgba(69, 62, 62, 0.543);
+    padding: 13px 6px;
+    margin: 4px;
+}
+.topic{
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 12px 3px;
+}
+.topic h4{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    font-size: 20px;
+}
+
+#nav p{
+    font-weight: bold;
+    margin: 12px auto 0 auto;
+}
+.context {
+    padding: 0px 14px;
+    margin: 15px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* main css  */
+
+#main{
+    width: 70vw;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #e9e7e7;
+    filter: drop-shadow(1px 1px 6px black);
+    border: 1px solid rgb(162, 156, 156);
+    padding: 0 2%;
+}
+#assest{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;    
+    width: 60vw;
+    padding: 30px;
+    margin: 4% 0;
+    /* justify-content: center; */
+}
+.assest {
+    width: 26vw;
+    height: fit-content;
+    padding: 13px 3vw;
+    margin: 10px auto;
+    overflow: hidden;
+    background-color: #e9e7e7;
+    border-radius: 20px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+#intro-ass{
+    width: fit-content;
+     
+    margin: auto;
+}
+
+#intro-ass textarea{
+    border-radius: 32px;
+    padding: 9px;
+   
+}
+
+
+div#assest2 {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+
+div#assest2 textarea{
+    
+        border-radius: 19px;
+        padding: 9px 15px;
+    
+}
+
+
+div#assest7 {
+    padding: 0;
+    width: 30vw;
+    padding-top: 11%;
+
+}
+
+.a7-div {
+    background-color: #cecccc;
+    border-radius: 16px;
+    filter: drop-shadow(2px 4px 6px black);
+    width: fit-content;
+   
+    margin: auto;
+}
+.a7-div textarea {
+    margin: 10px 1px;
+    border-radius: 20px;
+    height: 50px;
+    padding: 5px;
+    padding-left: 11px;
+}   
+
+.heading-into {
+    padding: 2px 7px;
+    background-color: black;
+    color: white;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#sub2{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div.subt1 {
+    background: #b6b6b6;
+   margin: 5px;
+    font-size: 60%;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 5% 5% 14% 14%;
+    filter: drop-shadow(1px 1px 10px black);
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.btnss{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: right;
+    
+    
+}
+#summary{
+    font-size: 17px;
+    padding: 2px;
+}
+
+.subt1 textarea {
+   
+    border-radius: 15px;
+    padding: 5px;
+}
+
+div#select {
+    display: flex;
+    justify-content: right;
+    margin: 12px auto;
+}
+
+.save{
+    margin: 22px;
+}
+
+
+
+.coll {
+    display: flex;
+    justify-content: right;
+    margin: 12px;
+    
+    cursor: pointer;
+}
+
+
+#assest8 iframe{
+   
+        width: -webkit-fill-available;
+        padding: 11% 0%;
+        height: 41vh;
+    
+}
+.collapsible {
+    border: none;
+    /* display: flex; */
+    background-color: transparent;
+    color: #de1b1b;
+    /* justify-self: right; */
+    /* float: right; */
+    width: 100%;
+}
+.active, .collapsible:hover {
+    background-color: transparent;
+    color: black;
+
+  }

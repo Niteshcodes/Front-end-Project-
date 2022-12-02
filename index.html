@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    <!-- adding jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hidebtn").on("click", function () {
+          $('.collapse123').toggleClass("active");
+          $('.collapse123').slideToggle(200);
+        });
+        $("#hidebtn1").on("click", function () {
+          $('.collapse1234').toggleClass("active");
+          $('.collapse1234').slideToggle(200);
+        });
+        $("#hidebtn2").on("click", function () {
+          $('.collapse1235').toggleClass("active");
+          $('.collapse1235').slideToggle(200);
+        });
+      });
+    </script>
+
+    <!-- styleseet  file  -->
+    
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <title>Frontend Project</title>
+  </head>
+  <body>
+    <header>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="190"
+        height="30"
+        viewBox="0 0 190 30"
+        fill="none"
+      >
+        <circle cx="15" cy="15" r="15" fill="#0029FF" />
+        <circle cx="8.5" cy="14.5" r="1.5" fill="white" />
+        <circle opacity="0.1" cx="9.5" cy="10.5" r="1.5" fill="white" />
+        <circle opacity="0.1" cx="9.5" cy="18.5" r="1.5" fill="white" />
+        <circle opacity="0.1" cx="21.5" cy="18.5" r="1.5" fill="white" />
+        <circle opacity="0.1" cx="21.5" cy="10.5" r="1.5" fill="white" />
+        <circle cx="12.5" cy="21.5" r="1.5" fill="white" />
+        <circle cx="18.5" cy="21.5" r="1.5" fill="white" />
+        <circle cx="22.5" cy="14.5" r="1.5" fill="white" />
+        <circle cx="15.5" cy="14.5" r="1.5" fill="white" />
+        <circle cx="18.5" cy="7.5" r="1.5" fill="white" />
+        <circle cx="12.5" cy="7.5" r="1.5" fill="white" />
+        <path d="M8.5 14.5H15.5L18.5 21.5H12.5" stroke="white" />
+        <path d="M12.5 7.5H18.5" stroke="white" />
+        <path
+          d="M45.88 8.06H41.54V22H45.88C50.46 22 53.28 19.38 53.28 15.06C53.28 10.74 50.46 8.06 45.88 8.06ZM43.36 20.5V9.54H45.88C49.52 9.54 51.42 11.66 51.42 15.06C51.42 18.46 49.52 20.5 45.88 20.5H43.36ZM63.1806 8.04H55.6806V22H63.1806V20.5H57.5006V15.7H62.5806V14.2H57.5006V9.54H63.1806V8.04ZM73.4345 8.04H65.9345V22H73.4345V20.5H67.7545V15.7H72.8345V14.2H67.7545V9.54H73.4345V8.04ZM78.0084 14.68V9.56H80.6884C82.7684 9.56 83.6484 10.52 83.6484 12.14C83.6484 13.7 82.7684 14.68 80.6884 14.68H78.0084ZM85.5084 12.14C85.5084 9.86 83.9684 8.06 80.6884 8.06H76.1884V22H78.0084V16.18H80.6884C84.1484 16.18 85.5084 14.26 85.5084 12.14Z"
+          fill="black"
+        />
+        <path
+          d="M92.0425 10.7H95.7625V22H99.1825V10.7H102.903V7.96H92.0425V10.7ZM113.359 22H116.779V7.96H113.359V13.46H108.039V7.96H104.619V22H108.039V16.22H113.359V22ZM133.068 14.94C133.068 10.72 129.888 7.76 125.888 7.76C121.908 7.76 118.668 10.72 118.668 14.94C118.668 19.16 121.908 22.14 125.888 22.14C129.868 22.14 133.068 19.16 133.068 14.94ZM122.168 14.94C122.168 12.44 123.608 10.86 125.888 10.86C128.128 10.86 129.588 12.44 129.588 14.94C129.588 17.4 128.128 19.02 125.888 19.02C123.608 19.02 122.168 17.4 122.168 14.94ZM134.91 16.34C134.91 20.22 137.45 22.14 140.71 22.14C143.95 22.14 146.67 20.22 146.67 16.34V7.96H143.25V16.36C143.25 18.02 142.39 18.98 140.77 18.98C139.15 18.98 138.33 18.02 138.33 16.36V7.96H134.91V16.34ZM155.632 7.8C151.432 7.8 148.492 10.76 148.492 14.96C148.492 19.16 151.452 22.1 155.652 22.1C159.352 22.1 161.692 19.68 162.412 17.26V14.08H154.972V16.6H159.312C158.792 18.18 157.612 19.08 155.912 19.08C153.452 19.08 151.972 17.56 151.972 14.96C151.972 12.52 153.432 10.96 155.632 10.96C156.912 10.96 157.872 11.46 158.392 12.4H162.172C161.432 9.52 158.992 7.8 155.632 7.8ZM173.046 22H176.466V7.96H173.046V13.46H167.726V7.96H164.306V22H167.726V16.22H173.046V22ZM178.175 10.7H181.895V22H185.315V10.7H189.035V7.96H178.175V10.7Z"
+          fill="#0029FF"
+        />
+      </svg>
+    </header>
+    <h2 id="mainheading">Demo task</h2>
+
+    <!-- moveable navbar  -->
+
+    <div id="nav">
+      <div class="topic">
+        <h4 id="navbtn">Journey Board <i class="fa-solid fa-bars"></i></h4> 
+      </div>
+      <div class="context">
+      <p>1.Name of the task gose here</p>
+      <ul>
+        <li>Assest heading 1</li>
+        <li>Assest heading 2</li>
+        <li>Assest heading 3</li>
+        <li>Assest heading 4</li>
+        <li>Assest heading 5</li>
+        <li>Assest heading 6</li>
+      </ul>
+    </div>
+
+    </div>
+
+    <!-- main content div   -->
+
+
+    <div id="main" >
+      <h2 id="secondheading">You Are Taking Challenges Of New Project</h2>
+      <div id="assest">
+
+        <!-- assest 1  -->
+
+        <div id="assest1" class="assest">
+          <h4 class="Heading1">assest heading 1</h4>
+          <i class="fa-sharp fa-solid fa-chevron-down"></i>
+
+          <button type="button" class="collapsible">
+            <i class="fa-solid fa-angle-up coll" id="ass1Close"></i>
+          </button>
+
+          <p id="hide1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            aliquid pariatur illo? Error explicabo cumque et labore totam quos
+            animi omnis in soluta perferendis ut atque ex suscipit eligendi
+            perspiciatis minima aliquam quisquam, doloremque nesciunt. Fugit
+            odit nemo placeat doloribus rerum consectetur perferendis libero
+            debitis sit accusantium, ea corrupti quisquam itaque enim, inventore
+            quaerat eveniet ullam dolorem esse minus tenetur aspernatur sed
+            illum! Tenetur optio alias vitae corrupti commodi harum quia hic
+            perspiciatis repellendus nemo eos, nam dicta quod. Optio, similique
+            minus quia molestiae nemo delectus, dolorum, aspernatur omnis
+            reprehenderit modi dignissimos sapiente nesciunt illo aliquid in!
+            Blanditiis, voluptatibus autem nihil, dolore officia sunt quis
+            deleniti suscipit, harum voluptates unde vel magni facere soluta sed
+            distinctio veritatis sit expedita quam beatae impedit repellat
+            ratione. Dolorem laudantium error eum, commodi maxime quae
+            voluptatibus debitis libero repudiandae quo, alias deserunt a
+            delectus nobis incidunt tempora sequi modi fugiat mollitia impedit
+            doloribus corrupti soluta corporis! Debitis illo unde laudantium
+            enim, consequuntur qui cum natus libero dolorum accusantium sint
+            doloremque magnam nobis reprehenderit reiciendis aliquid ullam aut
+            odio ea? Similique dolore error facilis accusamus hic molestiae,
+            voluptas eaque placeat. Ea officiis a mollitia perspiciatis
+          </p>
+        </div>
+
+        <!-- assest 2 -->
+
+        <div class="assest" id="assest2">
+          <h4 class="Heading1">assest heading 2</h4>
+          <button type="button" class="collapsible">
+            <i class="fa-solid fa-angle-up coll" id="ass1Close"></i>
+          </button>
+
+          <div id="hide2">
+            <textarea
+              name="assest2"
+              cols="4"
+              rows="20"
+              placeholder="write your text here"
+              style="width: 291px; height: 155px"
+            ></textarea>
+            <button type="submit">submit</button>
+          </div>
+        </div>
+
+        <!-- assest 3 -->
+
+        <div id="assest3" class="assest">
+          <h4 class="Heading1">assest heading 3</h4>
+          <button type="button" class="collapsible">
+            <i class="fa-solid fa-angle-up coll" id="ass1Close"></i>
+          </button>
+          <iframe
+            src="assets/pdfs/sample.pdf"
+            frameborder="0"
+            width="300"
+            height="450"
+          ></iframe>
+        </div>
+
+        <!-- assest 4 -->
+
+        <div id="assest4" class="assest">
+          <h4 class="Heading1">assest heading 4</h4>
+          <button type="button" class="collapsible">
+            <i class="fa-solid fa-angle-up coll" id="ass1Close"></i>
+          </button>
+          <div>
+            <img src="https://media.giphy.com/media/IzjhI7ggjDlEnMxZMu/giphy.gif" alt="img" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              nesciunt vitae eligendi, asperiores expedita animi impedit cumque
+              quia illum deserunt. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Officiis minus ratione saepe exercitationem modi
+              asperiores iure porro ipsa amet. Quo earum necessitatibus eos
+              commodi, odio, perspiciatis odit praesentium nesciunt nemo
+              incidunt fuga recusandae veniam. Voluptatem accusamus repudiandae
+              nulla totam omnis?
+            </p>
+          </div>
+        </div>
+
+        <!-- assest 5 -->
+
+        <div id="assest5" class="assest">
+          <h4 class="Heading1">assest heading 5</h4>
+          <button type="button" class="collapsible">
+            <i class="fa-solid fa-angle-up coll" id="ass1Close"></i>
+          </button>
+          <audio
+            src="https://ringtonestar.net/saved_ringtones/Trending_English-Ringtonestar.Net.mp3"
+            controls
+          ></audio>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perferendis totam itaque veritatis cupiditate, reiciendis a!
+            Sapiente, dolor, qui voluptates quas facere nobis ab vitae eaque
+            minima atque rerum aut, voluptate alias animi inventore fugiat?
+            Reprehenderit fugiat vel id voluptatibus nihil!
+          </p>
+        </div>
+
+        <!-- assest 6 -->
+
+        <div id="assest6" class="assest">
+          <h4 class="Heading1">assest heading 6</h4>
+
+          <div class="form1">
+            <div class="ThreadA">
+              <h3 class="heading-into" id="threadAA">
+                <i class="fa-solid fa-angle-down"></i> Thread A
+              </h3>
+
+              <div id="hideit">
+                <div id="sub2">
+                  <div class="subt1">
+                    <h2>Sub Thread 1</h2>
+                    <textarea
+                      id="subtext"
+                      cols="17"
+                      rows="3"
+                      placeholder="Enter Text Here"
+                    ></textarea>
+                  </div>
+                  <div class="subt1">
+                    <h2>Sub Interpretation 1</h2>
+                    <textarea
+                      id="subtext2"
+                      cols="18"
+                      rows="3"
+                      placeholder="Enter Text Here"
+                    ></textarea>
+                  </div>
+                </div>
+                <div id="select">
+                  <select name="select Category" id="category">
+                    <option value="category1">select category</option>
+                    <option value="category2">category1</option>
+                    <option value="category3">category2</option>
+                    <option value="category4">category3</option>
+                  </select>
+                  <select name="select Category" id="category">
+                    <option value="category1">select process</option>
+                    <option value="category2">process 1</option>
+                    <option value="category3">process 2</option>
+                    <option value="category4">process 3</option>
+                  </select>
+                </div>
+                <button>+ Sub Thread</button>
+
+                <div class="summary subt1">
+                  <h3 id="summary">Summary for Thread A</h3>
+                  <textarea id="" cols="38" rows="5"></textarea>
+                </div>
+                <div class="flex">
+                  <span
+                    ><i class="fa-sharp fa-solid fa-link"></i> Thread Creadit
+                    <i class="fa-solid fa-pen-line"></i>
+                  </span>
+                  <select name="select" id="selectemo">
+                    <option value="emotion">Select Emotion</option>
+                    <option value="emotion">emotion 1</option>
+                    <option value="emotion">emotion 2</option>
+                    <option value="emotion">emotion 3</option>
+                  </select>
+                </div>
+                <div class="btnss">
+                  <span
+                    ><button>+ New Thread</button> <br />
+                    <i class="fa-solid fa-floppy-disk"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- assest 7 -->
+
+        <div id="assest7" class="assest">
+          <h4 class="Heading1">assest heading 7</h4>
+
+          <h3 class="heading-into" id="hidebtn">
+            <i class="fa-solid fa-angle-down"></i> Introduction
+          </h3>
+
+          <div id="intro-ass" class="collapse123">
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Enter Text Conclusion"
+            ></textarea>
+          </div>
+          <div>
+            <h3 class="heading-into" id="hidebtn1">
+              <i class="fa-solid fa-angle-down"></i> Thread A
+            </h3>
+            <div class="collapse1234">
+               <div class="a7-div ">
+                  <h3>Example1</h3>
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Enter Text Here"
+              ></textarea>
+            </div>
+            <button>+ Example</button>
+            <div class="a7-div argumentForThreadA">
+              <h3>
+                <i class="fa-solid fa-angle-up"></i> Argument for Thread A
+              </h3>
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Enter Text Here"
+              ></textarea>
+            </div>
+            <button>+ New Thread</button>
+          </div>
+            <h3 class="heading-into" id="hidebtn2">
+              <i class="fa-solid fa-angle-down"></i> Conclusion
+            </h3>
+            <div id="conc" class="collapse1235">
+              <textarea
+                cols="25"
+                rows="5"
+                placeholder="Enter Conclusion"
+              ></textarea>
+            </div>
+            <div class="save"><i class="fa-solid fa-floppy-disk"></i></div> 
+          </div>
+        </div>
+
+
+        <!-- assest 8 -->
+
+        <div id="assest8" class="assest">
+          <h4 class="Heading1">assest heading 8</h4>
+          <button type="button" class="collapsible">
+            <i class="fa-solid fa-angle-up coll" id="ass1Close"></i>
+          </button>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/s8H0Sx7jy7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>
